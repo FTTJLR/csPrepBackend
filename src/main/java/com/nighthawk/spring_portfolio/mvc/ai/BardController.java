@@ -5,11 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-
-@CrossOrigin(origins = "http://localhost:4100")
+@CrossOrigin(origins = "https://fttjlr.github.io")
 @RestController
 @RequestMapping("/api/bard")
 public class BardController {
@@ -18,7 +14,7 @@ public class BardController {
 
     @Autowired
     public BardController() {
-        String token = "eAhIiu0w8muSSVRFVqMHMywUgUrdWz0RjLohT4sptxpNCIe-QQj_GAgO45A0LLfCnIOBJw.;sidts-CjIBPVxjSmRz-cpAHpbtRiNAbOyo6Xdo5Mitr-b1iQe4DpZ7sgO1c-ka9mJdh-xOv9LttBAA";
+        String token = "eAhIiu0w8muSSVRFVqMHMywUgUrdWz0RjLohT4sptxpNCIe-QQj_GAgO45A0LLfCnIOBJw.;sidts-CjIBPVxjSpBAhXucvQXxYjr6zpKMfh0nLSaGkLB5Kif8E3peJRn6A-y-iTQ9RYg-cj1DLxAA";
         this.bardExample = new GoogleBardExample(token);
     }
 

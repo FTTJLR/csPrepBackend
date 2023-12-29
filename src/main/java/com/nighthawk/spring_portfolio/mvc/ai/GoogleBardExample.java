@@ -12,7 +12,7 @@ public class GoogleBardExample {
     private AIClient client;
 
     public GoogleBardExample(String token) {
-        this.client = new GoogleBardClient(token, Duration.ofMinutes(20160));
+        this.client = new GoogleBardClient(token, Duration.ofMinutes(120));
     }
 
     public String askQuestion(String question) {
